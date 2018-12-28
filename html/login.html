@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+	</head>
+	<body>
+		<div class="pdclass">
+			<div class="top">
+				<img src="../img/gateLogo.png"/>
+				<span>欢迎登陆</span>
+			</div>
+		</div>
+		<div class="d_c">
+			<div class="content">
+				<div class="content_01" >
+					<p class="span_01">长城润滑油会员</p>
+					<span class="info"></span>
+					<div class="content_04" id="mdiv01">
+						<p class="content_p"></p>
+						<input type="" name="" id="inp01" value="" placeholder="手机号"/>
+						
+					</div>
+					<!--<p class="p01">--><span id="mp01">请输入手机号</span><!--</p>-->
+					
+					<div class="content_041" id="mdiv02">
+						<p class="content_p01"></p>
+						<input type="" name="" id="inp02" value="" placeholder="密码"/>
+					</div>
+					<!--<p class="p01">--><span id="mp02">请输入密码</span><!--</p>-->
+					<div class="content_05">
+						<input type="checkbox" name="" id="" value="" />
+						<span>自动登录</span>
+						<a href="javascript:0">忘记密码?</a>
+					</div>
+					<div class="ts"></div>
+					<a class="pd_02" href="javascript:0"><div class="content_06 pd_01"></div></a>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<img src="../img/foorterImg.jpg"/>
+		</div>
+		<div class="footer">
+			<ul>
+				<li>订单帮助</li>
+				<li>礼品售后</li>
+				<li>投诉说明</li>
+				<li>法律说明</li>
+				<li>友情链接</li>
+			</ul>
+			<p>版权所有:&nbsp;&nbsp;沪ICP备12038387号</p>
+		</div>
+
+	</body>
+</html>
+<script src="../js/jquery-1.3.1.js" type="text/javascript" charset="utf-8"></script>
+<!--<script type="text/javascript">
+		var mdiv1 = document.getElementById("mdiv01");
+		var mp1 = document.getElementById("mp01");
+		var inp1 = document.getElementById("inp01");
+		
+			mdiv1.onmousemove= function(){
+				if(inp1.value==""){
+					mp1.style.display = "block";
+				}
+			}	
+			mdiv1.onmouseout= function(){
+				mp1.style.display = "none";
+			}
+		
+		
+		
+		var mdiv2 = document.getElementById("mdiv02");
+		var mp2 = document.getElementById("mp02");
+		var inp2 = document.getElementById("inp02");
+		
+			mdiv2.onmousemove= function(){
+				if(inp2.value==""){
+					mp2.style.display = "block";
+				}
+			}	
+			mdiv2.onmouseout= function(){
+				mp2.style.display = "none";
+			}
+			
+		
+		var str =/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+//			console.log(str)
+		var str1 =/^[a-zA-Z]\w{5,17}$/;
+		var dianji = document.getElementsByClassName("pd_01")[0];
+		var my_a = document.getElementsByClassName("pd_02")[0];
+			dianji.onclick=function(){
+				if (str.test(inp1.value)&&str1.test(inp2.value)) {
+					my_a.href="css/index.css"
+				}else{
+					alert("请输入正确手机号和：以字母开头，长度在6~18之间，只能包含字母、数字和下划线")
+				}
+			}
+</script>-->
+<script type="text/javascript">
+		$(function(){
+			//登录页输入账户、密码
+			$(".content_04 input,.content_041 input").focus(function(){
+				  $(this).parent().sibling("span").show();
+				  
+			}).blur(function(){
+				 if ($(this).val() == '') {
+					$(this).parent().siblings("span").show();
+				 }
+				 if ($(this).val() != '') {
+					$(this).parent().siblings("span").hide();
+				 }
+			});	
+		});
+		var validation = {
+              checkMobile: function(sMobile) {//手机号
+                    var mobile_tag = (/^1[23456789]\d{9}$/.test(sMobile))
+                    return mobile_tag;
+              },
+              checkPw: function(pw) {//密码规范
+                    var pw_tag = (/^[a-zA-Z0-9]{6,12}$/.test(pw)); 
+                    return pw_tag;
+              }
+        }
+		$('.content_01 input').bind('input propertychange blur',function () {
+            var zValue = $(this).val();
+                if(zValue == ''){
+                    $('.content_01 #mp01').html('手机号不能为空');
+                }else if( validation.checkMobile(zValue) == false || zValue.length > 11){
+                    $('.content_01 #mp01').html('您的手机号格式不正确,请您重新输入');
+                }
+                else{
+                    $('.content_01 #mp01').html("");
+                }
+	    })
+		
+</script>

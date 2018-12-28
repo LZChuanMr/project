@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/headernav.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/ddCenter.css"/>
+	</head>
+	<body>
+		<!--顶部开始-->
+		<div class="top_one">
+			<ul>
+				<li><a href="javascript:0;" class="a01">Hi,ROOT001</a></li>
+				<li>目前积分：<span class="a01">7864</span></li>
+				<li><a href="javascript:0;">退出</a></li>
+				<li><a href="javascript:0;">修改密码</a></li>
+				<li><a href="javascript:0;"class="a01">返回活动选择页</a></li>
+			</ul>
+		</div>
+		
+		<div class="top_two">
+			<img src="../img/serveDh.png"/>
+			<div>
+				<input type="" name="" id="myinp" value="输入关键字" class="inp01"/>
+				<button class="but01"></button>
+				<ul>
+					<li>热搜关键词：</li>
+					<li>金吉星</li>
+					<li>机油</li>
+					<li>工作手套</li>
+					<li>POLO衫</li>
+				</ul>
+			</div>	
+		</div>
+		<!--导航栏-->
+		<div class="top_three">
+			<p class="thr_p01">
+				<a href="javascript:0;" class="thr_a01">城频道分类</a>
+			</p>
+			<ul class="ul_nav">
+				<li><a href="javascrip:0;">首页</a></li>
+				<li><a href="javascrip:0;">活动机制</a></li>
+				<li><a href="javascrip:0;">下单流程</a></li>
+				<li><a href="javascrip:0;">质保机制</a></li>
+				<li><a href="javascrip:0;">服务中心</a></li>
+				<li><a href="javascrip:0;">订单中心</a></li>
+			</ul>
+			<ul class="ul_d01">
+				<li><a href="">家居生活：</a>&nbsp;></li>
+				<li><a href="">汽车养护</a>：&nbsp;></li>
+				<li class="last_li"><a href="">我要服务</a>：&nbsp;></li>
+				<div class="div_z">
+					<img src="../img/doubleR.png"/>
+					<a href="javascrip:0;">分公司查询登陆</a>
+				</div>
+			</ul>
+		</div>
+		<!--导航结束-->
+		
+		<!--提示栏-->
+		<div class="bt">
+			<p>您当前的位置：&nbsp;&nbsp;首页&nbsp;>&nbsp;订单中心		</p>
+		</div>
+		<!------->
+		
+		<!--内容-->
+		<div class="main">
+			<a href="javascript:0;"></a>
+			<div class="tlist">
+				<span>产品列表</span>
+			</div>
+			<div class="dd_main">
+				<div class="main_top">
+					<input type="text" name="" id="ds01" value="请输入商品名称或订单号进行搜索" />
+					<input type="submit" name="" id="ds02" value="订单搜索" />
+					<span > 成交时间:&nbsp;</span>
+					<input type="date" name="ds03" id="ds03" value="" />
+					<span>&nbsp;到：</span>
+					<input type="date" name="ds04" id="ds04" value="" />
+					<input type="submit" class="ds02" id="" value="查询" />
+				</div>	
+				<ul>
+					<li class="li01">商品名称</li>
+					<li class="li01 cur">积分</li>
+					<li class="li01 cur1">数量</li>
+					<li class="li01 cur2">小计</li>
+					<li class="li01 cur3">规格备注</li>
+					<li class="li01 cur4">物流信息</li>
+				</ul>
+				<table class="tab01">
+					<tbody>
+						<tr >
+							<td class="td01">
+								<span>2015-03-27&nbsp;&nbsp;&nbsp;&nbsp;订单号：025652554586662332</span>
+								<a href="javascript:0;">去支付</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/jquery-1.3.1.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	//鼠标经过商城频道
+	$(function(){
+		$(".top_three").mouseover(function(){
+			$(".ul_d01").css("display","block")
+		})		
+		$(".top_three").mouseout(function(){
+			$(".ul_d01").css("display","none")
+		})	
+	//鼠标进入离开搜索框
+	$(function(){
+		$("#myinp").mouseover(function(){
+			$(this).removeAttr("value");
+		})	
+		$("#myinp").mouseout(function(){
+			$(this).attr("value",value);
+		})	
+	})
+	});
+</script>

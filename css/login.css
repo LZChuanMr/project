@@ -1,0 +1,191 @@
+.top{
+	width: 1200px;
+	height: 40px;
+	overflow: hidden;
+	padding-left: 80px;
+	box-sizing: border-box;
+}
+.top img{
+	margin-right: 80px;
+}
+.top span{
+	font-size: 28px;
+	color: #e60012;
+	font-weight: bold;
+	position: relative;
+	top: 8px;
+}
+.pdclass{
+	width: 1200px;
+	overflow: hidden;
+	padding-top:50px ;
+	margin: 0 auto;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+.d_c{
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	float: left;
+	background: #A40007;
+}
+.content{
+	width: 1200px;
+	height: 500px;
+	overflow: hidden;
+	margin: 0 auto;
+	background: url(../img/loginBg.png)no-repeat;
+	position: relative;	
+}
+.content_01{
+	float: left;
+	width: 360px;
+	height: 400px;
+	background: white;
+	position: absolute;
+	top: 40px;
+	right: 25px;
+	padding: 50px 28px 0 28px;
+	box-sizing: border-box;
+}
+.span_01{
+	float: left;
+	font-size: 18px;
+	color: #666;
+}
+.content_04{
+	width: 100%;
+	height: 45px;
+	background: #f6f6f6;
+	float: left;
+	padding: 15px 0 10px 15px ;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	margin-top: 30px;
+	border: 1px solid #666666;
+}
+.content_041{
+	width: 100%;
+	height: 45px;
+	background: #f6f6f6;
+	float: left;
+	padding: 15px 0 10px 15px ;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	border: 1px solid #666666;
+}
+.content_p{
+	display: block;
+	width: 10%;
+	height: 18px;
+	float: left;
+	background: url(../img/01.png.png)no-repeat;
+	border-right: 1px solid black;
+	margin-right: 15px;
+}
+.content_04 input{
+	border: none;
+	background: #f6f6f6;
+	
+}
+.content_041 input{
+	border: none;
+	background: #f6f6f6;
+	
+}
+.content_p01{
+	display: block;
+	width: 10%;
+	height: 18px;
+	float: left;
+	background: url(../img/02.png.gif)no-repeat;
+	border-right: 1px solid black;
+	margin-right: 15px;
+}
+.content_05{
+	width: 100%;
+	height: 20px;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	
+}
+.content_05 a{
+	float: right;
+}
+.content_05 input{
+	position: relative;
+	top: 2px;
+}
+#mp01{
+	float: left;
+	display: none;
+	color: red;
+}
+#mp02{
+	float: left;
+	display:none;
+	color: red;
+}
+.p01{
+	display: block;
+	float: left;
+	height: 15px;
+	width: 100%;
+	
+}
+.ts{
+	float: left;
+	width: 360px;
+	height: 30px;
+	background: url(../img/lossTx.png)no-repeat ;
+}
+.content_06{
+	float: left;
+	width: 100%;
+	height: 45px;
+	background:url(../img/loginAniu.png)no-repeat ;
+	text-align: center;
+	line-height: 45px;
+	margin-top: 10px;
+}
+.content_06 a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+.foot{
+	width: 100%;
+	height: 200px;
+	float: left;
+	padding-top: 20px;
+	padding-left: 320px;
+	box-sizing: border-box;
+}
+.foot img{
+	width: 850px;
+	height: 140px;
+}
+.footer{
+	width: 100%;
+	height: 123px;
+	float: left;
+	text-align: center;
+	background-color: #999;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+.footer ul li{
+	display: inline-block;
+    font-size: 16px;
+    width: 135px;
+    color: white;
+    border-right: 2px #fff solid;
+}
+.footer p{
+	color: white;
+	font-size: 14px;
+	margin-top: 30px;
+}  

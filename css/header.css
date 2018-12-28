@@ -1,0 +1,280 @@
+header{
+	width: 100%;
+	/*overflow: hidden;*/
+}
+.w1200{
+	width: 1200px;
+}
+.qcq_01{
+	height: 36px;
+	border-bottom: solid 1px #DFDFDF
+}
+.qcq_02{
+	height: 100%;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.qcq_02 li{
+	float: left;
+	line-height: 36px;
+	padding: 0 15px;
+	text-align: center;
+	background: url(../images/headerTop_ulli.png)no-repeat top right;
+}
+.qcq_02 li:first-child a{
+	color: #0066CC;
+}
+.qcq_02 li span:last-child{
+	color: #0066CC;
+}
+.qcq_02 li:last-child a{
+	color: #0066CC;
+}
+.qcq_02 li:after{
+}
+/*-------------2----------------*/
+.qcq_03{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+.qcq_03_left{
+	margin-top: 25px;
+	float: left;
+}
+.qcq_03_left img{
+	width: 381px;
+	height: 71px;
+}
+.qcq_03_right{
+	float: right;
+	margin-top: 40px;
+}
+.qcq_form{
+	width: 298px;
+	height: 32px;
+	background: url(../img/searchDiv_form.png)no-repeat top right;
+}
+.qcq_form input:first-child{
+	width: 202px;
+    height: 27px;
+    line-height: 28px;
+    margin-top: 2px;
+    margin-left: 40px;
+    border: none;
+    float: left;
+    color: #999;
+}
+.qcq_form input:last-child{
+	border: none;
+	width: 55px;
+    height: 32px;
+    float: right;
+    background: Transparent;
+    cursor: pointer
+}
+.qcq_03ulli{margin-top: 7px;}
+.qcq_03ulli li{
+	float: left;
+	padding-right: 14px;
+	color: #666;
+}
+.qcq_03ulli li:nth-child(n+2) a:hover{
+	color: deepskyblue;
+}
+/*-----------3------------*/
+
+.top_three{
+	width: 100%;
+	height: 50px;
+	background: #005BAC;
+	padding: 5px 140px 5px 140px;
+	box-sizing: border-box;
+	position: relative;
+}
+.thr_p01{
+	float: left;
+	display: block;
+	width: 230px;
+	height: 40px;
+	text-align: center;
+	background: url(../images/frequeL1.png)no-repeat 25px center;
+}
+.thr_a01{
+	font-size: 16px;
+	color:white;
+	line-height: 40px;
+}
+.ul_d01{
+	display: none;
+	padding-top: 15px;
+	width: 200px;
+	height: 350px;
+	background: #005BAC;
+	text-align: center;
+	z-index: 10;
+	/*overflow: hidden;*/
+	position: absolute;
+	top: 40px;
+}
+.ul_d01 li{
+	line-height: 50px;
+	font-size: 16px;
+	color: white;
+	border-bottom: 1px solid white;
+}
+.ul_d01 li a{
+	color: white;
+}
+.ul_d01 li:first-child{
+	background: url(../images/frequeL2.png)no-repeat 20px 15px;
+	padding-left: 40px;
+}
+.last_li{
+	background: url(../images/frequeL4.png)no-repeat 20px;
+	padding-left: 40px;
+}
+.ul_d01 li:nth-child(2){
+	background: url(../images/frequeL3.png)no-repeat 20px;
+	padding-left: 40px;
+}
+.ul_nav{
+	float: left;
+	margin-left: 150px;
+}
+.ul_nav li{
+	float: left;
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+}
+.ul_nav li a{
+	color: white;
+}
+.ul_nav li:first-child{
+	padding-left: 30px;
+	background: url(../img/indMenuBg.png)no-repeat 5px 10px;
+}
+.div_z{
+	width: 220px;
+	height: 50px;
+	background: #0773D3;
+	z-index: 11;
+	/*margin-top: 100px;*/
+	box-sizing: border-box;
+	padding: 8px 8px 8px 30px;
+	position: absolute;
+	bottom: 50px;
+	left: -10px;
+}
+.div_z img{
+	float: left;
+}
+.div_z a{
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+	line-height: 40px;
+	margin-left: 5px;
+}
+.bt{
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 145px;
+}
+.bt p{
+	font-size: 16px;
+	
+}
+.top_three{
+	margin-top: 20px;
+}
+/*---------身体--------------*/
+.qcq_st01{
+	width: 100%;
+}
+.qcq_st02{
+	width: 1200px;
+	margin: 10px auto;
+}
+.qcq_st02ulli{
+	width: 100%;
+	height: 20px;
+	padding-left: 15px;
+	font-size: 16px;
+}
+.qcq_st02ulli li{
+	float: left;
+	margin-right: 7px;
+}
+.qcq_st03{
+	margin-top: 15px;
+}
+.qcq_st04{
+	width: 100%;
+	margin-top: 10px;
+	overflow: hidden;
+}
+/*----*/
+.qcq_st041{
+	float: left;
+	width: 263px;;
+}
+.qcq_st04ulli li{
+	margin-top: 1px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    width: 263px;
+    height: 40px;
+    line-height: 40px;
+	color: #3A3A3A;
+    text-align: center;
+    background: url(../img/procMecha_lul.jpg) no-repeat;
+}
+.qcq_st04ulli li a{
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 40px;
+    text-align: center;
+}
+/**/
+.qcq_st042{
+	float: right;
+	width: 910px;
+}
+.qcq_st0421{
+	display: none;
+}
+.cur{
+	display: block;
+}
+.curimg{
+	background: url(../img/procMecha_lulclk.jpg)no-repeat!important;
+}
+/*----*/
+@charset "utf-8";
+/* CSS Document */
+/*页脚CSS*/
+.footerBou{ height:123px; background-color:#999;}
+.footerBou_ul li{ display:inline-block; font-size:15px; width:135px; border-right:2px #fff solid;}
+.footerBou_ul li a{ color:#fff;}
+
+#gd_f{
+	width: 50px;
+	height: 50px;
+	background:url(../img/result-top-btn.png)no-repeat center center;
+	position: fixed;
+	right: 60px;
+	bottom:40px;
+}
+/*返回顶部*/
+/*.backToTop{ display:none; background:url(../img/result-top-btn.png) no-repeat; width:70px; height:65px; position:fixed; right:50px; bottom:180px; cursor:pointer;}*/
+/*返回顶部 end*/
+
