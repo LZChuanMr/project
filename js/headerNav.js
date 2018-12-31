@@ -1,0 +1,18 @@
+//鼠标经过商城频道
+	$(function(){
+		$(".top_three").mouseover(function(){
+			$(".ul_d01").css("display","block")
+		})		
+		$(".top_three").mouseout(function(){
+			$(".ul_d01").css("display","none")
+		})	
+	//鼠标进入离开搜索框
+	$(function(){
+		$("#myinp").mouseover(function(){
+			$(this).removeAttr("value");
+		})	
+		$("#myinp").mouseout(function(){
+			$(this).attr("value",value);
+		})	
+	})
+	});

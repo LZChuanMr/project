@@ -11,7 +11,7 @@
 }
 .main{
 	width: 1200px;
-	height: 1000px;
+	height: 980px;
 	margin: 0 auto;
 }
 .main a{
@@ -78,7 +78,7 @@
 	cursor: pointer;
 	margin-left: 55px;
 }
-.dd_main ul{
+.dd_u1{
 	float: left;
 	width: 100%;
 	height: 32px;
@@ -108,6 +108,7 @@
 }
 .cur4{
 	width: 204px;
+	border: none !important;
 }
 .tab01{
 	width: 100%;
@@ -135,6 +136,58 @@
 	font-size: 14px;
 	text-align: center;
 }
-
-
-
+.td02{
+	display: block;
+	height: 122px;
+	border-bottom: 1px solid #ccc;
+}
+.td03{
+	display: block;
+	height: 122px;
+}
+.li02{
+	float: left;
+	width: 301px;
+	height: 120px;
+	line-height: 120px;
+	font-size: 16px;
+	text-align: center;
+	border-right: 1px solid #ccc;
+	background: url(../img/products3.png)no-repeat 15px center;
+	background-size: 30%;
+}
+.li03{
+	height: 120px;
+	float: left;
+	text-align: center;
+	line-height: 120px;
+	border-right: 1px solid #ccc;
+}
+.bimg{
+	background: url(../img/products4.png)no-repeat 15px center;
+	background-size: 30% ;
+}
+.l_s{
+	display: block;
+	width: 150px;
+	float: left;
+	overflow: hidden;
+	font-size: 16px;
+	text-align: left;
+	padding: 20px 0 0 100px;
+}
+.l02{
+	float: left;
+	width: 301px;
+	height: 120px;
+	font-size: 16px;
+	text-align: center;
+	border-right: 1px solid #ccc;
+	
+}
+.k{
+	float: left;
+	width: 100%;
+	height: 20px;
+	
+}

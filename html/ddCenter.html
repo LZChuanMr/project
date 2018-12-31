@@ -6,6 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/headernav.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/ddCenter.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pageNav.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
 	</head>
 	<body>
 		<!--顶部开始-->
@@ -80,7 +82,7 @@
 					<input type="date" name="ds04" id="ds04" value="" />
 					<input type="submit" class="ds02" id="" value="查询" />
 				</div>	
-				<ul>
+				<ul class="dd_u1">
 					<li class="li01">商品名称</li>
 					<li class="li01 cur">积分</li>
 					<li class="li01 cur1">数量</li>
@@ -95,14 +97,79 @@
 								<span>2015-03-27&nbsp;&nbsp;&nbsp;&nbsp;订单号：025652554586662332</span>
 								<a href="javascript:0;">去支付</a>
 							</td>
+							<td class="td02">
+								<ul>
+									<li class="li02">
+										<span>泊尔丹正品</span>
+									</li>
+									<li class="li03 cur">
+										<span>52.00</span>
+									</li>
+									<li class="li03 cur1">1</li>
+									<li class="li03 cur2">52.00积分</li>
+									<li class="li03 cur3">5L白色</li>
+									<li class="li03 cur4">待发货，未支付</li>
+								</ul>
+							</td>
+							<td class="td02">
+								<ul>
+									<li class="l02 bimg">
+										<span class="l_s">便携式音箱SBM100 三种色系丰富视觉选择 wOOx扬声器携式音箱SBM100 </span>
+									</li>
+									<li class="li03 cur">
+										<span>1299.00</span>
+									</li>
+									<li class="li03 cur1">1</li>
+									<li class="li03 cur2">1299.00积分</li>
+									<li class="li03 cur3">直径28cm，黑色</li>
+									<li class="li03 cur4">待发货，未支付</li>
+								</ul>
+							</td>
+						</tr>
+						<tr class="k"></tr>
+						<tr >
+							<td class="td01">
+								<span>2015-03-27&nbsp;&nbsp;&nbsp;&nbsp;订单号：025652554586662332</span>
+								<a href="javascript:0;">去支付</a>
+							</td>
+							<td class="td03">
+								<ul>
+									<li class="li02">
+										<span>泊尔丹正品</span>
+									</li>
+									<li class="li03 cur">
+										<span>52.00</span>
+									</li>
+									<li class="li03 cur1">1</li>
+									<li class="li03 cur2">52.00积分</li>
+									<li class="li03 cur3">5L白色</li>
+									<li class="li03 cur4">待发货，未支付</li>
+								</ul>
+							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
+			
+		</div>
+		<nav aria-label="Page navigation" class="page-nav-outer" id="PageNavId"></nav>
+		<div class="foot">
+			<img src="../img/foorterImg.jpg"/>
+		</div>
+		<div class="footer">
+			<ul>
+				<li>订单帮助</li>
+				<li>礼品售后</li>
+				<li>投诉说明</li>
+				<li>法律说明</li>
+				<li>友情链接</li>
+			</ul>
+			<p>版权所有:&nbsp;&nbsp;沪ICP备12038387号</p>
 		</div>
 	</body>
 </html>
 <script src="../js/jquery-1.3.1.js" type="text/javascript" charset="utf-8"></script>
+
 <script type="text/javascript">
 	//鼠标经过商城频道
 	$(function(){
@@ -118,8 +185,44 @@
 			$(this).removeAttr("value");
 		})	
 		$("#myinp").mouseout(function(){
-			$(this).attr("value",value);
+			if($("#myinp").val()==""){
+				//alert(1);
+				$("#myinp").val("输入关键字");
+			}
+		})	
+	})
+	
+	$(function(){
+		$("#ds01").mouseover(function(){
+			$(this).removeAttr("value");
+		})	
+		$("#ds01").mouseout(function(){
+			
+			if($("#ds01").val()==""){
+				//alert(1);
+				$("#ds01").val("请输入商品名称或订单号进行搜索");
+			}
 		})	
 	})
 	});
 </script>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/pageNav.js"></script>
+<script type="text/javascript">
+            var pageNavObj = null;//用于储存分页对象
+            pageNavObj = new PageNavCreate("PageNavId",{
+                 pageCount:30, 
+                 currentPage:1, 
+                 perPageNum:5, 
+            });
+            pageNavObj.afterClick(pageNavCallBack);
+
+            function pageNavCallBack(clickPage){
+                pageNavObj = new PageNavCreate("PageNavId",{
+                     pageCount:30, 
+                     currentPage:clickPage, 
+                     perPageNum:5, 
+                });
+                pageNavObj.afterClick(pageNavCallBack);
+            }
+        </script>
