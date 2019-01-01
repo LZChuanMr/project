@@ -157,7 +157,7 @@
 }
 .main{
 	width: 1200px;
-	height: 1200px;
+	height: 1555px;
 	margin: 0 auto;
 }
 .th04_t{
@@ -202,7 +202,7 @@
 }
 .main_bo{
 	float: left;
-	width: 1200px;
+	width: 1180px;
 	height: 115px;
 	margin: 0 auto;
 	border: 1px solid #CCCCCC;
@@ -336,6 +336,7 @@
 	border: 1px solid #cccccc;
 	box-sizing: border-box;
 	padding: 8px;
+	margin-bottom: 10px;
 }
 .ptps_top{
 	width: 100%;
@@ -344,4 +345,90 @@
 	border: solid 1px #D5D5D5;
 	text-align: center;
 	
+}
+.ptps_top ul li{
+	float: left;
+	height: 31px;
+	text-align: center;
+	color: white;
+	line-height: 30px;
+}
+.li_01{
+	float: left;
+	width: 285px;
+	font-size: 16px;
+}
+.li_02{
+	float: left;
+	width: 606px;
+	border-right: 1px solid #ccc;
+	font-size: 16px;
+}
+.ptps_but{
+	width: 100%;
+	height: 32px;
+	border: solid 1px #D5D5D5;
+	text-align: center;
+	line-height: 32px;
+}
+.curr{
+	width: 608px;
+}
+.curr1{
+	width: 286px;
+}
+.bs{
+	background: white;
+}
+.sz{
+	width: 221px;
+	color: black !important;
+	font-size: 18px !important;
+}
+.sz1{
+	width: 511px;
+	color: black !important;
+	font-size: 18px !important;
+}
+.br{
+	border-right: none;
+}
+.btn{
+	border-top: none;
+}
+.but_div{
+	float: left;
+	width: 1200px;
+	height: 185px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+}
+.but_div ul li{
+	clear: both;
+	width: 100%;
+	height: 31px;
+	line-height: 31px;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+	padding-left: 25px;
+}
+.but_div ul li p{
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+.but_div ul li p span{
+	color: red;
+	font-size: 18px;
+	font-weight: bold;
+}
+#dj_dd{
+	float: left;
+	margin-left: 500px;
+	border: none;
+	width: 183px;
+	height: 50px;
+	margin-top: 20px;
+	background: url(../img/fyzj_Tabfist.jpg)no-repeat;
+
 }
