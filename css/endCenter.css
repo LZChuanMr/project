@@ -166,6 +166,7 @@
 }
 .th05_t{
 	text-align: center;
+	cursor: pointer;
 }
 .th01_t02{
 	border-right: 1px solid #CCCCCC;
@@ -430,5 +431,17 @@
 	height: 50px;
 	margin-top: 20px;
 	background: url(../img/fyzj_Tabfist.jpg)no-repeat;
-
+	cursor: pointer;
+}
+.ul_d01 li:first-child {
+    background: url(../img/frequeL2.png)no-repeat 20px 40px;
+    padding-left: 40px;
+}
+#gd_f{
+	width: 50px;
+	height: 50px;
+	background:url(../img/result-top-btn.png)no-repeat center center;
+	position: fixed;
+	right: 60px;
+	bottom:40px;
 }

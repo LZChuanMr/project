@@ -10,6 +10,7 @@
 		<script src="../js/jquery-1.3.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/fangdajing.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="../js/xuanxianf.js"></script>
+		<script src="../js/djiaj.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<header>
@@ -41,17 +42,7 @@
 						</ul>
 					</div>
 				</div>
-				<script type="text/javascript">
-					$("#anniu1").click(function(){
-						$("#anniu1").val("");
-					})
-					$("#anniu1").mouseout(function(){
-//						alert("123")
-						if ($("#anniu1").val() == "") {
-							$("#anniu1").val("输入关键字");
-						} 
-					})
-				</script>
+				
 			<!-----3------>
 			<div class="top_three">
 			<p class="thr_p01">
@@ -77,15 +68,7 @@
 			
 		</div>
 			
-			<script type="text/javascript">
-				$(function(){
-					$(".thr_a01").hover(function(){
-						$(".ul_d01").css("display","block");
-					},function(){
-						$(".ul_d01").css("display","none");
-					});
-				})
-			</script>
+			
 		</header>
 		<!-- body -->
 		<div class="body_box1">
@@ -144,9 +127,9 @@
 						</div>
 						<div class="body_box2_3">
 							<span>购买数量：</span>
-							<input class="body_input1" type="button" name="" id="" value="" />
-							<input class="body_input2" type="text" name="" id="" value="1" />
-							<input class="body_input3" type="button" name="" id="" value="" />
+							<input class="body_input1" type="button"  onclick="sub()" />
+							<input class="body_input2" type="text" id="txt" value="1" />
+							<input class="body_input3" type="button"  onclick="add()" />
 						</div>
 						<span class="body_span1">
 							库存18520件
@@ -240,3 +223,35 @@
     <!------------------>
 	</body>
 </html>
+<script type="text/javascript">
+	$(function() {
+		$(".thr_p01").mouseover(function(){
+			$(".ul_d01").css("display", "block");
+		})
+		$(".ul_d01").mouseout(function(){
+			$(".ul_d01").css("display", "none");
+		})
+	})
+</script>
+<script type="text/javascript">
+	$("#anniu1").click(function() {
+		$("#anniu1").val("");
+	})
+	$("#anniu1").mouseout(function() {
+		//						alert("123")
+		if($("#anniu1").val() == "") {
+			$("#anniu1").val("输入关键字");
+		}
+	})
+</script>
+<script type="text/javascript">
+	$("#tab li").mouseover(function(){
+		$(this).css("border","2px solid red").siblings().css("border","solid 2px #C1B9B9");
+		$(this).css("background","url(../img/tb-selected-b.gif)no-repeat bottom right").siblings().css("background","#fff");
+	})
+	
+	$(".body_ul2 li").mouseover(function(){
+		$(this).css("border","2px solid red").siblings().css("border","solid 2px #C1B9B9");
+		$(this).css("background","url(../img/tb-selected-b.gif)no-repeat bottom right").siblings().css("background","#fff");
+	})
+</script>

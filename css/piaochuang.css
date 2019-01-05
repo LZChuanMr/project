@@ -1,0 +1,8 @@
+/*飘窗*/
+	#online{ width:180px; height:131px; position:relative; z-index:10;}
+	.con_pP{ width:180px; height:131px; background:url(../img/jiFen_tz.png) no-repeat; cursor:pointer;}
+	#cc_blackBg{background:url(../img/blackBg.png); width:100%; height:100%; position:fixed; *position:absolute; top:0; bottom:0; right:0; left:0; z-index:111;}
+	
+	#yJonline{ width:208px; height:151px;}
+	#yJowy{ background-color:#FFFFFF; width:685px; height:325px; margin:auto; position:fixed; left:0;right:0; top:0; bottom:0; z-index:112; border:solid 5px #ECEFF1;}
+	.closeSpan{ width:22px; height:21px; background:url(../img/closeSpan.jpg) no-repeat; top:15px; right:15px;}

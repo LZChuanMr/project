@@ -101,7 +101,7 @@ header{
 	width: 230px;
 	height: 40px;
 	text-align: center;
-	background: url(../images/frequeL1.png)no-repeat 25px center;
+	background: url(../img/frequeL1.png)no-repeat 25px center;
 }
 .thr_a01{
 	font-size: 16px;
@@ -130,15 +130,15 @@ header{
 	color: white;
 }
 .ul_d01 li:first-child{
-	background: url(../images/frequeL2.png)no-repeat 20px 15px;
+	background: url(../img/frequeL2.png)no-repeat 20px 15px;
 	padding-left: 40px;
 }
 .last_li{
-	background: url(../images/frequeL4.png)no-repeat 20px;
+	background: url(../img/frequeL4.png)no-repeat 20px;
 	padding-left: 40px;
 }
 .ul_d01 li:nth-child(2){
-	background: url(../images/frequeL3.png)no-repeat 20px;
+	background: url(../img/frequeL3.png)no-repeat 20px;
 	padding-left: 40px;
 }
 .ul_nav{

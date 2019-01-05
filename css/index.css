@@ -1,10 +1,16 @@
 .body_box1{
 	width: 100%;
+	height: 365px;
+	overflow: hidden;
 	
 }
 
 .body_ul1{
+	width: 100% !important;
+}
+.body_ul1 img{
 	width: 100%;
+	height: 365px;
 }
 .cut{
 	display: none;
@@ -305,9 +311,64 @@
 }
 .li_bac{
 	margin-top: 50px;
-	background: url(../img/ZlhdpLi_tow.jpg)no-repeat;
 	background-size: 100%;
 	width: 100%;
 	height: 370px;
 	margin: 0 auto;
+}
+.li_bac img{
+	width:100%;
+	height: 370px;
+}
+#gd_f{
+	width: 50px;
+	height: 50px;
+	background:url(../img/result-top-btn.png)no-repeat center center;
+	position: fixed;
+	right: 60px;
+	bottom:40px;
+}
+.ul_d01{
+	position: absolute;
+	top: 40px;
+}
+.ul_d01 li:first-child{
+	background: url(../img/frequeL1.png)no-repeat 20px 17px;
+	padding-left: 40px;
+}
+.two_li{
+	background: url(../img/frequeL2.png)no-repeat 20px;
+	padding-left: 40px;
+}
+.three_li{
+	background: url(../img/frequeL4.png)no-repeat 20px;
+	padding-left: 40px;
+}
+.last_li{
+	background: url(../img/frequeL3.png)no-repeat 20px;
+	padding-left: 40px;
+}
+.left{
+	width: 15px;
+	height: 15px;
+	float: left;
+	background: #393E3A;
+	color: white;
+	position: absolute;
+    left: 700px;
+    top: 530px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.left:hover{
+	background: #E10012;
+}
+.r2{
+	position: absolute;
+    left: 725px;
+}
+.no{
+	display: none;
 }

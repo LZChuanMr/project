@@ -85,7 +85,7 @@
 						</tr>
 						<tr class="two_tr">
 							<th class="th01_t">
-								<input type="checkbox" name="checkbox" id="x01" value="" />
+								<input type="checkbox" name="checkbox" id="x01" class="bg1" value="" />
 								<span>泊尔双胆正品</span>
 							</th>
 							<th class="th02_t">52.00</th>
@@ -100,7 +100,7 @@
 						</tr>
 						<tr class="two_tr">
 							<th class="th01_t02">
-								<input type="checkbox" name="checkbox" id="x02" value="" />
+								<input type="checkbox" name="checkbox" id="x02" class="bg1" value="" />
 								<span>便携式音箱SBM100 三种色系丰富视觉选择 wOOx扬声器携式音箱SBM100 </span>
 							</th>
 							<th class="th02_t">52.00</th>
@@ -115,7 +115,7 @@
 						</tr>
 						<tr class="two_tr">
 							<th class="th01_t03">
-								<input type="checkbox" name="checkbox" id="x03" value="" />
+								<input type="checkbox" name="checkbox" id="x03" class="bg1" value="" />
 								<span>便携式音箱SBM100 三种色系丰富视觉选择 wOOx扬声器携式音箱SBM100 </span>
 							</th>
 							<th class="th02_t">52.00</th>
@@ -179,5 +179,13 @@
 			$(this).parent().css("display","none");
 		})
 	})
+	
+	//收货地址选中变色
+	$(function(){
+		$(".bg1").click(function(){
+			$(this).parent().parent().css("background","#F2E5D1").siblings().css("background","#fff");
+		})
+	})
+</script>
 </script>
 
